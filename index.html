@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colorful Neon Buttons</title>
+  <style>
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .neon-button {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 16px;
+      letter-spacing: 2px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      transition: 0.2s;
+      border-radius: 5px;
+    }
+
+    .neon-button span {
+      position: absolute;
+      display: block;
+    }
+
+    /* FOLLOW BUTTON - Green */
+    .follow-btn:hover {
+      background: #ff1414;
+      color: #000;
+      box-shadow: 0 0 10px #ff1414, 0 0 40px #ff1414, 0 0 80px #ff1414;
+    }
+
+    .follow-btn span:nth-child(1) {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #ff1414);
+      animation: animate1 1s linear infinite;
+    }
+
+    .follow-btn span:nth-child(2) {
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, #ff1414);
+      animation: animate2 1s linear infinite;
+      animation-delay: 0.25s;
+    }
+
+    .follow-btn span:nth-child(3) {
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, #ff1414);
+      animation: animate3 1s linear infinite;
+      animation-delay: 0.5s;
+    }
+
+    .follow-btn span:nth-child(4) {
+      bottom: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, #ff1414);
+      animation: animate4 1s linear infinite;
+      animation-delay: 0.75s;
+    }
+
+    /* LIKE BUTTON - Pink */
+    .like-btn:hover {
+      background: #0011ff;
+      color: #000;
+      box-shadow: 0 0 10px #0011ff, 0 0 40px #0011ff, 0 0 80px #0011ff;
+    }
+
+    .like-btn span:nth-child(1) {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #0011ff);
+      animation: animate1 1s linear infinite;
+    }
+
+    .like-btn span:nth-child(2) {
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, #0011ff);
+      animation: animate2 1s linear infinite;
+      animation-delay: 0.25s;
+    }
+
+    .like-btn span:nth-child(3) {
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, #0011ff);
+      animation: animate3 1s linear infinite;
+      animation-delay: 0.5s;
+    }
+
+    .like-btn span:nth-child(4) {
+      bottom: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, #0011ff);
+      animation: animate4 1s linear infinite;
+      animation-delay: 0.75s;
+    }
+
+    /* SAVE BUTTON - Blue */
+    .save-btn:hover {
+      background: #03e9f4;
+      color: #000;
+      box-shadow: 0 0 10px #03e9f4, 0 0 40px #03e9f4, 0 0 80px #03e9f4;
+    }
+
+    .save-btn span:nth-child(1) {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #03e9f4);
+      animation: animate1 1s linear infinite;
+    }
+
+    .save-btn span:nth-child(2) {
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, #03e9f4);
+      animation: animate2 1s linear infinite;
+      animation-delay: 0.25s;
+    }
+
+    .save-btn span:nth-child(3) {
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, #03e9f4);
+      animation: animate3 1s linear infinite;
+      animation-delay: 0.5s;
+    }
+
+    .save-btn span:nth-child(4) {
+      bottom: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, #03e9f4);
+      animation: animate4 1s linear infinite;
+      animation-delay: 0.75s;
+    }
+
+    @keyframes animate1 {
+      0% { left: -100%; }
+      50%, 100% { left: 100%; }
+    }
+
+    @keyframes animate2 {
+      0% { top: -100%; }
+      50%, 100% { top: 100%; }
+    }
+
+    @keyframes animate3 {
+      0% { right: -100%; }
+      50%, 100% { right: 100%; }
+    }
+
+    @keyframes animate4 {
+      0% { bottom: -100%; }
+      50%, 100% { bottom: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+ <a href="https://www.youtube.com/@MdSarif-i3x" class="neon-button follow-btn">
+  SUSCRIBE CHANNEL
+  <span></span><span></span><span></span><span></span>
+</a>
+
+  <a href="https://www.facebook.com/share/v/1EUTgaFNKH/" class="neon-button like-btn">
+   LIKE THIS VIDEO
+  <span></span><span></span><span></span><span></span>
+</a>
+
+
+  <a href="https://www.facebook.com/md.amir.hamja.651237" class="neon-button save-btn">
+  FOLLOW THIS PAZE
+  <span></span><span></span><span></span><span></span>
+</a>
+
+
+</body>
+</html>
